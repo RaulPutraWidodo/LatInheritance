@@ -99,7 +99,7 @@ public void cetakTunjangan() {
 # 3. Kelas ```Programmer``` (Subclass dari Pegawai)
 **a. Atribut** ```bonus```
 
-Kelas Programmer menambahkan atribut baru yaitu bonus, yang menyimpan bonus bagi seorang programmer (tipe double).
+Kelas Programmer menambahkan atribut baru yaitu bonus, yang menyimpan bonus bagi seorang programmer (tipe ```double)```.
 
 **b. Metode** ```setBonus(double bonus)``` dan ```getBonus()```
 
@@ -150,9 +150,17 @@ manager.cetakInfo();
 manager.cetakTunjangan();
 ```
 Pertama, kita membuat objek ```Manager``` bernama ```manager```.
+
+
 Kita mengatur nama manajer menjadi "Andi", gaji pokok sebesar 10 juta, dan tunjangan sebesar 3 juta.
+
+
 Kemudian, kita memanggil metode ```cetakInfo()``` untuk mencetak nama, gaji pokok, dan tunjangan dari manajer tersebut.
+
+
 Terakhir, kita memanggil metode ```cetakTunjangan()``` untuk mencetak tunjangan saja.
+
+
 **b. Membuat Objek** ```Programmer```
 ```
 Programmer programmer = new Programmer();
@@ -163,8 +171,12 @@ programmer.cetakInfo();
 programmer.cetakBonus();
 ```
 Kita membuat objek ```Programmer``` bernama ```programmer```.
+
+
 Kita mengatur nama programmer menjadi "Budi", gaji pokok sebesar 8 juta, dan bonus sebesar 1,5 juta.
+
 Kemudian, metode ```cetakInfo()``` dipanggil untuk mencetak nama, gaji pokok, dan bonus.
+
 Akhirnya, kita memanggil metode ```cetakBonus()``` untuk mencetak bonus saja.
 # Kesimpulan:
 **Inheritance** (Pewarisan): Kelas Manager dan Programmer mewarisi atribut dan metode dari kelas Pegawai.
