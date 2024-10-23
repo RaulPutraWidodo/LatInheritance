@@ -84,6 +84,7 @@ public void cetakInfo() {
 }
 ```
 ```super.cetakInfo()``` memanggil metode ```cetakInfo()``` dari kelas induk ```(Pegawai)```, sehingga nama dan gaji pokok akan dicetak terlebih dahulu.
+
 Setelah itu, metode ini mencetak nilai tunjangan dari manajer.
 
 **D. Metode** ```cetakTunjangan()```
