@@ -1,4 +1,7 @@
-# LatInheritance
+# Latihan Inheritance
+# Soal
+<img src= "soal.jpeg">
+
 # 1. Kelas ```Pegawai``` (Superclass)
 a. Atribut (```nama``` dan ```gajiPokok```)
 Kelas ```Pegawai``` memiliki dua atribut:
@@ -140,45 +143,40 @@ public void cetakBonus() {
 
 Kelas ```Main``` adalah tempat untuk menjalankan program dan menguji kelas-kelas yang sudah dibuat.
 
-**a. Membuat** ```Objek Manager```
+Membuat objek ```Manager``` dan ```Programmer```
+
+Menetapkan nilai ```nama```, ```gajiPokok```, ```tunjangan``` (untuk manajer), dan ```bonus``` (untuk programmer).
+
+Memanggil metode ```cetakInfo()``` untuk mencetak informasi lengkap dari objek-objek tersebut. 
+
 ```
-Manager manager = new Manager();
-manager.setNama("Andi");
-manager.setGajiPokok(10000000);
-manager.setTunjangan(3000000);
-manager.cetakInfo();
-manager.cetakTunjangan();
+public class Main {
+    public static void main(String[] args) {
+        // Membuat dan mengatur objek Manager
+        Manager manager = new Manager();
+        manager.setNama("Andi");
+        manager.setGajiPokok(10000000);
+        manager.setTunjangan(3000000);
+        manager.cetakInfo();
+        manager.cetakTunjangan();
+
+        System.out.println();
+
+        // Membuat dan mengatur objek Programmer
+        Programmer programmer = new Programmer();
+        programmer.setNama("Budi");
+        programmer.setGajiPokok(8000000);
+        programmer.setBonus(1500000);
+        programmer.cetakInfo();
+        programmer.cetakBonus();
+    }
+}
 ```
-Pertama, kita membuat objek ```Manager``` bernama ```manager```.
+# Output
+<img src=output1.png>
 
-
-Kita mengatur nama manajer menjadi "Andi", gaji pokok sebesar 10 juta, dan tunjangan sebesar 3 juta.
-
-
-Kemudian, kita memanggil metode ```cetakInfo()``` untuk mencetak nama, gaji pokok, dan tunjangan dari manajer tersebut.
-
-
-Terakhir, kita memanggil metode ```cetakTunjangan()``` untuk mencetak tunjangan saja.
-
-
-**b. Membuat Objek** ```Programmer```
-```
-Programmer programmer = new Programmer();
-programmer.setNama("Budi");
-programmer.setGajiPokok(8000000);
-programmer.setBonus(1500000);
-programmer.cetakInfo();
-programmer.cetakBonus();
-```
-Kita membuat objek ```Programmer``` bernama ```programmer```.
-
-
-Kita mengatur nama programmer menjadi "Budi", gaji pokok sebesar 8 juta, dan bonus sebesar 1,5 juta.
-
-Kemudian, metode ```cetakInfo()``` dipanggil untuk mencetak nama, gaji pokok, dan bonus.
-
-Akhirnya, kita memanggil metode ```cetakBonus()``` untuk mencetak bonus saja.
 # Kesimpulan:
+
 **Inheritance** (Pewarisan): Kelas Manager dan Programmer mewarisi atribut dan metode dari kelas Pegawai.
 
 **Enkapsulasi:** Atribut-atribut pada tiap kelas disimpan dalam mode private untuk menjaga keamanan data, dan kita menggunakan metode setter dan getter untuk mengaksesnya.
